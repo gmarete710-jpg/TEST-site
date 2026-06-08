@@ -6,8 +6,13 @@
 }
 html, body {
     min-height: 100vh;
-    background: url("background.jpg") center/cover no-repeat;
+    /* base background (fallback) */
+    background-image: url("background.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
     background-attachment: fixed;
+    -webkit-background-size: cover;
 
 }
 header{
@@ -22,16 +27,18 @@ header{
     left: 0;
     width: 100%;
     display: flex;   
-    padding: 15px 200px; 
+    padding: 15px 100px; 
     transition: 0.2s ease;
     background: transparent;
 }
 header .logo{
-    color: brown;
+    color:rgb(12, 237, 253);
      font-weight:700 ;
      text-transform: uppercase;
      text-decoration: none;
      font-size: 2rem;
+     text-align: left;
+     
 }
 header .navigation{
     position: relative;
@@ -46,7 +53,7 @@ header .navigation .navigation-items a{
     text-decoration: none;
     font-weight: 500;
     position: relative;
-    color:rgb(243, 242, 242);
+    color:rgb(235, 227, 227);
     margin: 0;
     transition: 0.4s ease;
     font-size: 1.5rem;
@@ -54,7 +61,7 @@ header .navigation .navigation-items a{
 header .navigation .navigation-items a::before{
     width: 0;
     position:absolute;
-    background:gold;
+    background:rgb(236, 236, 233);
     content: "";
     height: 3px;
     bottom: 0;
@@ -82,7 +89,7 @@ section {
     position: relative;
     font-size: 1.5rem;
     z-index: 10;
-    color: rgb(241, 238, 238);
+    color: rgb(238, 236, 245);
     margin-top: 0;
     text-align: center;
     width: 100%;
@@ -90,12 +97,13 @@ section {
     padding: 0 20px;
 }
 .home .content h1{
-    font-size: 2rem;
+    font-size: 3rem;
     font-weight: 700;
     text-transform: uppercase;
     letter-spacing: 5px;
     line-height: 70px;
     margin-bottom: 60px;
+    color:rgb(252, 252, 252);
 }
 .home .content h1 span{
     font-size: 3rem;
@@ -103,15 +111,16 @@ section {
 }
 .home .content p{
     font-size: 1.5rem;
-    margin-bottom: 65px;
-    line-height: 1.8;
+    margin-bottom: 60px;
+    line-height: 1.8rem;
+    color:rgb(241, 240, 243);
 }
 .home .content a{
-    background: rgb(24, 12, 12);
+    background: rgb(17, 17, 17);
     text-decoration: none;
     padding: 12px 24px;
-    color: rgb(243, 243, 243);
-    border-radius: 2px;
+    color: rgb(240, 240, 241);
+    border-radius: 1.5px;
 }
 
 .home .media-icons{
@@ -123,10 +132,10 @@ section {
     margin-top: 30px;
     align-self: center;
     transition: 0.4s ease;
-    padding: 30px 40px;
+    padding: 15px 20px;
 }
 .home .media-icons a{
-    color: rgb(248, 243, 243);
+    color: rgb(244, 243, 247);
     font-size: 1.4rem;
 }
 .home .media-icons a:hover{
@@ -199,5 +208,14 @@ section {
     }
     .home .content a {
         padding: 12px 18px;
+    }
+}
+
+/* Serve a higher-resolution background on high-DPI / retina displays */
+@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+    html, body {
+        background-image: url("background@2x.jpg");
+        background-size: cover;
+        background-attachment: fixed;
     }
 }
