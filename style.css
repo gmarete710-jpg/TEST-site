@@ -40,7 +40,7 @@ header .navigation .navigation-items{
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    gap: 20px;
+    gap: 50px;
 }
 header .navigation .navigation-items a{
     text-decoration: none;
