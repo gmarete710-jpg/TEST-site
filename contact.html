@@ -1,29 +1,101 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>test site</title>
+    <title>Contact Gina African Jewelry</title>
     <link rel="stylesheet" href="style.css">
     <link href="https://cdn.jsdelivr.net/npm/@fontsource/poppins@5.2.7/index.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
- 
-    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
-<body>
-    <header>
-       
-        <div class="logo">GINA<span><br></span> AFRICAN ACCESSSORIES</div>
-        <div class="navigation">
-            <div class="navigation-items">
-             <a href="index.html">Home</a>
-             <a href="about.html">About</a>
-            <a href="gallery.html">Gallery</a>
-             <a href="contact.html">Contact</a>
-            </div>
-        </div>
+<body class="contact-page">
+    <header class="site-header">
+        <a class="logo" href="index.html">GINA<span>African Jewelry</span></a>
+        <button id="mobile-nav-toggle" class="mobile-nav-toggle" aria-label="Open navigation">
+            <i class="fa-solid fa-bars"></i>
+        </button>
+        <nav class="navigation">
+            <a href="index.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="gallery.html">Shop</a>
+            <a href="contact.html">Contact</a>
+        </nav>
+        <button class="cart-toggle" type="button" data-nav="cart" aria-label="View cart">
+            <i class="fa-solid fa-cart-shopping"></i><span>Cart</span> <span class="cart-count">0</span>
+        </button>
     </header>
 
-    <section class="home">
+    <main>
+        <section class="hero-section hero-split">
+            <div class="hero-copy">
+                <p class="eyebrow">Get in touch</p>
+                <h1>Questions, custom orders, or style advice?</h1>
+                <p class="hero-text">We’re here to help you find the perfect piece and support every order with friendly customer service.</p>
+            </div>
+            <div class="hero-media hero-image-block">
+                <img src="pot lady.jpg" alt="Contact support" loading="lazy">
+            </div>
+        </section>
 
-        <img src="african culture.jpg" alt="Hands" class="hero-image">
+        <section class="contact-section">
+            <div class="contact-card">
+                <h2>Contact us</h2>
+                <p>Send a message and our team will respond within one business day.</p>
+                <form id="contact-form">
+                    <label for="name">Name</label>
+                    <input id="name" type="text" name="name" placeholder="Your name" required>
+                    <label for="email">Email</label>
+                    <input id="email" type="email" name="email" placeholder="you@example.com" required>
+                    <label for="message">Message</label>
+                    <textarea id="message" name="message" rows="5" placeholder="Tell us what you're looking for" required></textarea>
+                    <button type="submit" class="btn btn-primary">Send Message</button>
+                </form>
+                <div class="contact-info">
+                    <p><strong>Email</strong><br>garethmarete99@gmail.com.com</p>
+                    <p><strong>Phone</strong><br>+254 707 135 305</p>
+                </div>
+            </div>
+            <div class="contact-highlights">
+                <article>
+                    <h3>Fast replies</h3>
+                    <p>Get the help you need before you buy.</p>
+                </article>
+                <article>
+                    <h3>Custom sourcing</h3>
+                    <p>Ask about custom colors, materials, and gift packaging.</p>
+                </article>
+                <article>
+                    <h3>Secure support</h3>
+                    <p>Track orders, returns, and delivery with ease.</p>
+                </article>
+            </div>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <div>
+            <p class="footer-brand">GINA African Jewelry</p>
+            <p>Beautiful jewelry handcrafted for every story.</p>
+        </div>
+        <div class="footer-links">
+            <a href="index.html">Home</a>
+            <a href="gallery.html">Shop</a>
+            <a href="about.html">About</a>
+            <a href="contact.html">Contact</a>
+        </div>
+        <div class="footer-social">
+            <a href="https://instagram.com/ginaafricanjewelry" target="_blank" rel="noreferrer" aria-label="Instagram">
+                <i class="fa-brands fa-instagram"></i>
+            </a>
+            <a href="https://facebook.com/ginaafricanjewelry" target="_blank" rel="noreferrer" aria-label="Facebook">
+                <i class="fa-brands fa-facebook"></i>
+            </a>
+            <a href="https://wa.me/15551234567" target="_blank" rel="noreferrer" aria-label="WhatsApp">
+                <i class="fa-brands fa-whatsapp"></i>
+            </a>
+        </div>
+    </footer>
+
+    <script src="app.js"></script>
+</body>
+</html>

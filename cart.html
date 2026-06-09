@@ -3,12 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Shop African Jewelry</title>
+    <title>Your Cart - Gina African Jewelry</title>
     <link rel="stylesheet" href="style.css">
     <link href="https://cdn.jsdelivr.net/npm/@fontsource/poppins@5.2.7/index.min.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
-<body class="gallery-page">
+<body class="cart-page">
     <header class="site-header">
         <a class="logo" href="index.html">GINA<span>African Jewelry</span></a>
         <button id="mobile-nav-toggle" class="mobile-nav-toggle" aria-label="Open navigation">
@@ -26,44 +26,40 @@
     </header>
 
     <main>
-        <section class="store-hero">
-            <div class="hero-copy">
-                <p class="eyebrow">Discover the collection</p>
-                <h1>Handcrafted African jewelry, ready to wear.</h1>
-                <p class="hero-text">Find earrings, necklaces, bracelets, and more from artisans who blend tradition with contemporary style.</p>
-            </div>
-            <div class="hero-image hero-banner">
-                <img src="holding hands.jpg" alt="African jewelry shop" loading="lazy">
+        <section class="cart-heading">
+            <div>
+                <p class="eyebrow">Your cart</p>
+                <h1>Review your selections</h1>
+                <p>Update quantities, remove items, or proceed to checkout when you are ready.</p>
             </div>
         </section>
 
-        <section class="filter-panel">
-            <div class="search-field">
-                <label for="search">Search products</label>
-                <input id="search" type="search" placeholder="Search jewelry, earrings, styles...">
+        <section class="cart-grid">
+            <div class="cart-table">
+                <div class="cart-items"></div>
             </div>
-            <div class="filters">
-                <div class="categories" aria-label="Filter by category"></div>
-                <div class="sort">
-                    <label for="sort">Sort by</label>
-                    <select id="sort">
-                        <option value="popular">Featured</option>
-                        <option value="low">Price: Low to High</option>
-                        <option value="high">Price: High to Low</option>
-                    </select>
+            <aside class="cart-summary">
+                <h3>Order summary</h3>
+                <div class="summary-row"><span>Subtotal</span><span class="subtotal-value">$0.00</span></div>
+                <div class="summary-row"><span>Shipping</span><span>$8.00</span></div>
+                <div class="summary-row summary-total"><span>Total</span><span class="total-value">$0.00</span></div>
+                <button id="checkout-btn" class="btn btn-primary">Checkout</button>
+                <a href="gallery.html" class="text-link">Continue shopping</a>
+                <div class="social-share">
+                    <p>Prefer to checkout via WhatsApp?</p>
+                    <a id="wa-checkout-link" class="btn btn-secondary" href="https://wa.me/+254707135305" target="_blank" rel="noreferrer">
+                        <i class="fa-brands fa-whatsapp"></i>
+                        Checkout on WhatsApp
+                    </a>
                 </div>
-            </div>
-        </section>
-
-        <section class="catalogue-grid">
-            <div class="catalogue"></div>
+            </aside>
         </section>
     </main>
 
     <footer class="site-footer">
         <div>
             <p class="footer-brand">GINA African Jewelry</p>
-            <p>Shop with confidence from our unique collection.</p>
+            <p>Beautiful jewelry handcrafted for every story.</p>
         </div>
         <div class="footer-links">
             <a href="index.html">Home</a>
@@ -78,7 +74,7 @@
             <a href="https://facebook.com/ginaafricanjewelry" target="_blank" rel="noreferrer" aria-label="Facebook">
                 <i class="fa-brands fa-facebook"></i>
             </a>
-            <a href="https://wa.me/15551234567" target="_blank" rel="noreferrer" aria-label="WhatsApp">
+            <a id="wa-footer-link" href="https://wa.me/+254707135305" target="_blank" rel="noreferrer" aria-label="WhatsApp">
                 <i class="fa-brands fa-whatsapp"></i>
             </a>
         </div>

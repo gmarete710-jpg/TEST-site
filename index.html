@@ -1,46 +1,151 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>test site</title>
+    <title>Gina African Jewelry</title>
     <link rel="stylesheet" href="style.css">
     <link href="https://cdn.jsdelivr.net/npm/@fontsource/poppins@5.2.7/index.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
- 
-    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
-<body>
-    <header>
-       
-        <div class="logo">GINA<span><br></span> AFRICAN ACCESSSORIES</div>
-        <div class="navigation">
-            <div class="navigation-items">
-             <a href="index.html">Home</a>
-             <a href="about.html">About</a>
-            <a href="gallery.html">Gallery</a>
-             <a href="contact.html">Contact</a>
-            </div>
-        </div>
+<body class="home-page">
+    <header class="site-header">
+        <a class="logo" href="index.html">GINA<span>African Jewelry</span></a>
+        <button id="mobile-nav-toggle" class="mobile-nav-toggle" aria-label="Open navigation">
+            <i class="fa-solid fa-bars"></i>
+        </button>
+        <nav class="navigation">
+            <a href="index.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="gallery.html">Shop</a>
+            <a href="contact.html">Contact</a>
+        </nav>
+        <button class="cart-toggle" type="button" data-nav="cart" aria-label="View cart">
+            <i class="fa-solid fa-cart-shopping"></i><span>Cart</span> <span class="cart-count">0</span>
+        </button>
     </header>
-    <section class="home">
 
-        <img src="african culture.jpg" alt="Hands" class="hero-image">
+    <main>
+        <section class="hero-section">
+            <div class="hero-copy">
+                <p class="eyebrow">Authentic African Jewelry</p>
+                <h1>Adorn your story with handmade elegance.</h1>
+                <p class="hero-text">Discover a curated collection of necklaces, bracelets, earrings, and accessories created by artisans across Africa.</p>
+                <div class="hero-actions">
+                    <a href="gallery.html" class="btn btn-primary">Shop Now</a>
+                    <a href="about.html" class="btn btn-secondary">Our Story</a>
+                </div>
+                <div class="hero-highlights">
+                    <div><strong>Free worldwide shipping</strong></div>
+                    <div><strong>Secure checkout</strong></div>
+                    <div><strong>Trusted craftsmanship</strong></div>
+                </div>
+            </div>
+            <div class="hero-media">
+                <img src="africa 4k.jpg" alt="African jewelry display" loading="lazy">
+            </div>
+        </section>
 
-        <div class="content">
-            <h1>Our<br><span>ACCESORIES</h1>
-            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit<br> Iure dolores quidem eius quas temporibus commodi sapiente cum<br>Rerum sapiente rem, non, architecto facilis est earum hic dolorem, blanditiis illo cum?</p>
-            <a href="gallery.html">Read More</a>
+        <section class="intro-grid">
+            <article>
+                <span class="feature-icon"><i class="fa-solid fa-leaf"></i></span>
+                <h2>Sustainable Designs</h2>
+                <p>Designed with natural materials and craftsmanship that honors tradition.</p>
+            </article>
+            <article>
+                <span class="feature-icon"><i class="fa-solid fa-hand-holding-heart"></i></span>
+                <h2>Artisan Empowerment</h2>
+                <p>Your purchase supports independent African makers and fair trade communities.</p>
+            </article>
+            <article>
+                <span class="feature-icon"><i class="fa-solid fa-gem"></i></span>
+                <h2>Unique Selection</h2>
+                <p>Every piece is limited and thoughtfully curated for confident everyday wear.</p>
+            </article>
+        </section>
 
-             <div class="media-icons">
-        <a href="#"><i class="fa-brands fa-whatsapp"></i></a>
-        <a href="#"><i class="fa-brands fa-instagram"></i></a>
-        <a href="#"><i class="fa-brands fa-twitter"></i></a>
-       </div>
+        <section class="featured-products">
+            <div class="section-heading">
+                <div>
+                    <p class="eyebrow">Featured collection</p>
+                    <h2>Most-loved accessories</h2>
+                </div>
+                <a href="gallery.html" class="text-link">Browse all products</a>
+            </div>
+            <div class="product-grid">
+                <article class="product-card">
+                    <img src="holding hands.jpg" alt="Beaded Necklace" loading="lazy">
+                    <div class="product-card-body">
+                        <h3>Beaded Necklace</h3>
+                        <p>Vibrant glass bead necklace with intricate pattern details.</p>
+                        <div class="product-card-footer">
+                            <span class="price">$45</span>
+                            <button class="btn btn-sm" data-product="beaded-necklace">Add to cart</button>
+                        </div>
+                    </div>
+                </article>
+                <article class="product-card">
+                    <img src="pot lady.jpg" alt="Brass Earrings" loading="lazy">
+                    <div class="product-card-body">
+                        <h3>Brass Earrings</h3>
+                        <p>Classic brass earrings with heritage-inspired shapes and polish.</p>
+                        <div class="product-card-footer">
+                            <span class="price">$35</span>
+                            <button class="btn btn-sm" data-product="brass-earrings">Add to cart</button>
+                        </div>
+                    </div>
+                </article>
+                <article class="product-card">
+                    <img src="africa 4k.jpg" alt="Kente Headwrap" loading="lazy">
+                    <div class="product-card-body">
+                        <h3>Kente Headwrap</h3>
+                        <p>Bold, colorful headwrap crafted from authentic Kente-inspired patterns.</p>
+                        <div class="product-card-footer">
+                            <span class="price">$28</span>
+                            <button class="btn btn-sm" data-product="kente-headwrap">Add to cart</button>
+                        </div>
+                    </div>
+                </article>
+            </div>
+        </section>
+
+        <section class="about-home">
+            <div class="about-copy">
+                <p class="eyebrow">Made with intention</p>
+                <h2>Jewelry that celebrates heritage and everyday beauty.</h2>
+                
+                
+            </div>
+            <div class="about-image">
+                
+            </div>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <div>
+            <p class="footer-brand">GINA African Jewelry</p>
+            <p>Beautiful jewelry handcrafted for every story.</p>
         </div>
-       
-    </section>
-    
+        <div class="footer-links">
+            <a href="index.html">Home</a>
+            <a href="gallery.html">Shop</a>
+            <a href="about.html">About</a>
+            <a href="contact.html">Contact</a>
+        </div>
+        <div class="footer-social">
+            <a href="https://instagram.com/ginaafricanjewelry" target="_blank" rel="noreferrer" aria-label="Instagram">
+                <i class="fa-brands fa-instagram"></i>
+            </a>
+            <a href="https://facebook.com/ginaafricanjewelry" target="_blank" rel="noreferrer" aria-label="Facebook">
+                <i class="fa-brands fa-facebook"></i>
+            </a>
+            <a href="https://wa.me/15551234567" target="_blank" rel="noreferrer" aria-label="WhatsApp">
+                <i class="fa-brands fa-whatsapp"></i>
+            </a>
+        </div>
+    </footer>
 
+    <script src="app.js"></script>
 </body>
 </html>

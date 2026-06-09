@@ -1,29 +1,116 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>test site</title>
+    <title>About Gina African Jewelry</title>
     <link rel="stylesheet" href="style.css">
     <link href="https://cdn.jsdelivr.net/npm/@fontsource/poppins@5.2.7/index.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
- 
-    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
-<body>
-    <header>
-       
-        <div class="logo">GINA<span><br></span> AFRICAN ACCESSSORIES</div>
-        <div class="navigation">
-            <div class="navigation-items">
-             <a href="index.html">Home</a>
-             <a href="about.html">About</a>
-            <a href="gallery.html">Gallery</a>
-             <a href="contact.html">Contact</a>
-            </div>
-        </div>
+<body class="about-page">
+    <header class="site-header">
+        <a class="logo" href="index.html">GINA<span>African Jewelry</span></a>
+        <button id="mobile-nav-toggle" class="mobile-nav-toggle" aria-label="Open navigation">
+            <i class="fa-solid fa-bars"></i>
+        </button>
+        <nav class="navigation">
+            <a href="index.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="gallery.html">Shop</a>
+            <a href="contact.html">Contact</a>
+        </nav>
+        <button class="cart-toggle" type="button" data-nav="cart" aria-label="View cart">
+            <i class="fa-solid fa-cart-shopping"></i><span>Cart</span> <span class="cart-count">0</span>
+        </button>
     </header>
 
-    <section class="home">
+    <main>
+        <section class="hero-section hero-split">
+            <div class="hero-copy">
+                <p class="eyebrow">Our mission</p>
+                <h1>Celebrating culture through wearable art.</h1>
+                <p class="hero-text">Gina African Jewelry brings handcrafted accessories from African artisans directly to you. We believe in purposeful design, ethical sourcing, and meaningful beauty.</p>
+                <a href="gallery.html" class="btn btn-primary">Shop the Collection</a>
+            </div>
+            <div class="hero-media hero-image-block">
+                <img src="africa 4k.jpg" alt="African jewelry display" loading="lazy">
+            </div>
+        </section>
 
-        <img src="holding hands.jpg" alt=" Holding Hands" class="hero-image">
+        <section class="story-section">
+            <div class="story-copy">
+                <p class="eyebrow">Why choose us</p>
+                <h2>True craftsmanship made by women and communities across Africa.</h2>
+                <p>Every piece is sourced from talented makers who preserve tradition, innovate responsibly, and work with fair trade values. Our goal is to support artisans, share culture, and help every customer feel confident in their purchase.</p>
+            </div>
+            <div class="story-grid">
+                <article>
+                    <h3>Handmade with care</h3>
+                    <p>From beads to metalwork, each product is assembled with precision and cultural meaning.</p>
+                </article>
+                <article>
+                    <h3>Honest sourcing</h3>
+                    <p>We partner with trusted makers who receive fair payment for their craft.</p>
+                </article>
+                <article>
+                    <h3>Designed for everyday wear</h3>
+                    <p>Jewelry that transitions from celebrations to daily outfits with ease.</p>
+                </article>
+            </div>
+        </section>
+
+        <section class="brand-values">
+            <div class="section-heading">
+                <div>
+                    <p class="eyebrow">Our values</p>
+                    <h2>Beauty, impact, and quality in every piece.</h2>
+                </div>
+            </div>
+            <div class="value-grid">
+                <article>
+                    <span class="value-icon"><i class="fa-solid fa-seedling"></i></span>
+                    <h3>Sustainable materials</h3>
+                    <p>We prioritize natural materials, recycled metals, and low-waste production.</p>
+                </article>
+                <article>
+                    <span class="value-icon"><i class="fa-solid fa-globe"></i></span>
+                    <h3>Global connection</h3>
+                    <p>Your purchase strengthens cross-cultural exchange and supports artisan communities.</p>
+                </article>
+                <article>
+                    <span class="value-icon"><i class="fa-solid fa-heart"></i></span>
+                    <h3>Meaningful gifts</h3>
+                    <p>Gifts that carry story, style, and the spirit of African heritage.</p>
+                </article>
+            </div>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <div>
+            <p class="footer-brand">GINA African Jewelry</p>
+            <p>Beautiful jewelry handcrafted for every story.</p>
+        </div>
+        <div class="footer-links">
+            <a href="index.html">Home</a>
+            <a href="gallery.html">Shop</a>
+            <a href="about.html">About</a>
+            <a href="contact.html">Contact</a>
+        </div>
+        <div class="footer-social">
+            <a href="https://instagram.com/ginaafricanjewelry" target="_blank" rel="noreferrer" aria-label="Instagram">
+                <i class="fa-brands fa-instagram"></i>
+            </a>
+            <a href="https://facebook.com/ginaafricanjewelry" target="_blank" rel="noreferrer" aria-label="Facebook">
+                <i class="fa-brands fa-facebook"></i>
+            </a>
+            <a href="https://wa.me/15551234567" target="_blank" rel="noreferrer" aria-label="WhatsApp">
+                <i class="fa-brands fa-whatsapp"></i>
+            </a>
+        </div>
+    </footer>
+
+    <script src="app.js"></script>
+</body>
+</html>
