@@ -2,18 +2,18 @@
 const SHIPPING = 8.0;
 
 const PRODUCTS = [
-    { id: 'beaded-necklace', name: 'Beaded Necklace', category: 'Necklaces', price: 45.0, image: 'holding hands.jpg', description: 'Vibrant glass bead necklace inspired by African motifs.' },
-    { id: 'kente-headwrap', name: 'Kente Headwrap', category: 'Headwear', price: 28.0, image: 'africa 4k.jpg', description: 'Bold headwrap with timeless Kente-inspired patterns.' },
-    { id: 'brass-earrings', name: 'Brass Earrings', category: 'Earrings', price: 35.0, image: 'pot lady.jpg', description: 'Polished brass earrings with rich, cultural detail.' },
-    { id: 'wooden-earrings', name: 'Wooden Earrings', category: 'Earrings', price: 24.0, image: 'holding hands.jpg', description: 'Lightweight wooden earrings hand-painted with tribal motifs.' },
-    { id: 'statement-bracelet', name: 'Statement Bracelet', category: 'Bracelets', price: 22.0, image: 'africa 4k.jpg', description: 'Bold bracelet that adds color and texture to any outfit.' },
-    { id: 'ethnic-cuff', name: 'Ethnic Cuff', category: 'Bracelets', price: 29.0, image: 'pot lady.jpg', description: 'Elegant cuff with engraved symbols and polished finish.' },
-    { id: 'wax-print-tote', name: 'Wax Print Tote', category: 'Bags', price: 33.0, image: 'holding hands.jpg', description: 'Sturdy tote bag with bold wax-print accents.' },
-    { id: 'leather-wallet', name: 'Leather Wallet', category: 'Accessories', price: 32.0, image: 'africa 4k.jpg', description: 'Compact wallet with embossed cultural patterns.' },
-    { id: 'patterned-shawl', name: 'Patterned Shawl', category: 'Accessories', price: 40.0, image: 'pot lady.jpg', description: 'Soft shawl with intricate geometric patterns.' },
-    { id: 'silver-anklet', name: 'Silver Anklet', category: 'Accessories', price: 27.0, image: 'holding hands.jpg', description: 'Delicate anklet that adds subtle shine to any look.' },
-    { id: 'beaded-bracelet', name: 'Beaded Bracelet', category: 'Bracelets', price: 18.0, image: 'africa 4k.jpg', description: 'Vibrant beadwork bracelet woven in traditional style.' },
-    { id: 'gift-set', name: 'Gift Set', category: 'Sets', price: 60.0, image: 'pot lady.jpg', description: 'Curated accessory set perfect for gifting.' }
+    { id: 'beaded-necklace', name: 'Beaded Necklace', category: 'Necklaces', price: 45.0, image: 'africa necklace.jpeg', description: 'Vibrant glass bead necklace inspired by African motifs.' },
+    { id: 'kente-headwrap', name: 'Kente Headwrap', category: 'Headwear', price: 28.0, image: 'more bags.jpeg', description: 'Bold headwrap with timeless Kente-inspired patterns.' },
+    { id: 'brass-earrings', name: 'Brass Earrings', category: 'Earrings', price: 35.0, image: 'ring.jpeg', description: 'Polished brass earrings with rich, cultural detail.' },
+    { id: 'wooden-earrings', name: 'Wooden Earrings', category: 'Earrings', price: 24.0, image: 'brown ring.jpeg', description: 'Lightweight wooden earrings hand-painted with tribal motifs.' },
+    { id: 'statement-bracelet', name: 'Statement Bracelet', category: 'Bracelets', price: 22.0, image: 'wrist bracelet 1.jpeg', description: 'Bold bracelet that adds color and texture to any outfit.' },
+    { id: 'ethnic-cuff', name: 'Ethnic Cuff', category: 'Bracelets', price: 29.0, image: 'bangles1.jpeg', description: 'Elegant cuff with engraved symbols and polished finish.' },
+    { id: 'wax-print-tote', name: 'Wax Print Tote', category: 'Bags', price: 33.0, image: 'bag on stand1.jpeg', description: 'Sturdy tote bag with bold wax-print accents.' },
+    { id: 'leather-wallet', name: 'Leather Wallet', category: 'Accessories', price: 32.0, image: 'trad bag1.jpeg', description: 'Compact wallet with embossed cultural patterns.' },
+    { id: 'patterned-shawl', name: 'Patterned Shawl', category: 'Accessories', price: 40.0, image: 'guy fixing.jpeg', description: 'Soft shawl with intricate geometric patterns.' },
+    { id: 'silver-anklet', name: 'Silver Anklet', category: 'Accessories', price: 27.0, image: 'bracelets 1.jpeg', description: 'Delicate anklet that adds subtle shine to any look.' },
+    { id: 'beaded-bracelet', name: 'Beaded Bracelet', category: 'Bracelets', price: 18.0, image: 'green necklace.jpeg', description: 'Vibrant beadwork bracelet woven in traditional style.' },
+    { id: 'gift-set', name: 'Gift Set', category: 'Sets', price: 60.0, image: 'handbag1.jpeg', description: 'Curated accessory set perfect for gifting.' }
 ];
 
 function formatCurrency(value) {
