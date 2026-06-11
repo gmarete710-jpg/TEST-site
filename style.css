@@ -149,11 +149,11 @@ a {
     align-items: center;
     gap: 0.5rem;
     margin-bottom: 1rem;
-    font-size: 0.9rem;
+    font-size: 1.5rem;
     letter-spacing: 0.15em;
     text-transform: uppercase;
-    color: white;
-    font-weight: 700;
+    color: rgb(10, 10, 10);
+    font-weight: 900;
 }
 .hero-copy h1,
 .hero-copy h2 {
@@ -165,8 +165,14 @@ a {
 .hero-text {
     max-width: 590px;
     margin-bottom: 2rem;
-    color: white;
+    color: rgb(0, 0, 0);
     font-size: 1.05rem;
+}
+.hero-callout {
+    font-size: 1.25rem;
+    font-weight: 700;
+    margin-bottom: 2rem;
+    color: rgb(22, 22, 22);
 }
 .hero-actions,
 .product-card-footer,
@@ -264,6 +270,7 @@ a {
     font-size: 1.2rem;
     margin-bottom: 1rem;
 }
+
 .section-heading {
     display: flex;
     align-items: center;
