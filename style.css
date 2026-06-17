@@ -165,7 +165,7 @@ a {
 .hero-text {
     max-width: 590px;
     margin-bottom: 2rem;
-    color: rgb(0, 0, 0);
+    color: rgb(255, 254, 254);
     font-size: 1.05rem;
 }
 .hero-callout {
