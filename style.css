@@ -378,6 +378,26 @@ a {
     grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
     margin-bottom: 3rem;
 }
+.catalogue-details-grid {
+    display: grid;
+    gap: 1rem;
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    padding: 0 1.5rem 3rem;
+}
+.catalogue-details-card {
+    background: var(--surface);
+    border-radius: 18px;
+    padding: 1.25rem;
+    box-shadow: 0 14px 30px rgba(16, 26, 32, 0.06);
+}
+.catalogue-details-card h3 {
+    margin-bottom: 0.5rem;
+    font-size: 1rem;
+}
+.catalogue-details-card p {
+    color: var(--muted);
+    font-size: 0.95rem;
+}
 .card-actions {
     display: flex;
     justify-content: space-between;
