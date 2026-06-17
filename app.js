@@ -2,18 +2,16 @@
 const SHIPPING = 8.0;
 
 const PRODUCTS = [
-    { id: 'beaded-necklace', name: 'Beaded Necklace', category: 'Necklaces', price: 45.0, image: 'africa necklace.jpeg', description: 'A vibrant handmade necklace featuring colorful beads and bold African-inspired patterns that make a statement.' },
-    { id: 'kente-headwrap', name: 'Kente Headwrap', category: 'Headwear', price: 28.0, image: 'more bags.jpeg', description: 'A stylish headwrap inspired by traditional Kente weaving, designed to add elegance and cultural flair to any look.' },
-    { id: 'brass-earrings', name: 'Brass Earrings', category: 'Earrings', price: 35.0, image: 'ring.jpeg', description: 'Polished brass earrings with intricate detailing and a warm metallic finish that complements both casual and formal outfits.' },
-    { id: 'wooden-earrings', name: 'Wooden Earrings', category: 'Earrings', price: 24.0, image: 'brown ring.jpeg', description: 'Lightweight wooden earrings hand-painted with tribal-inspired motifs for a natural, artistic touch.' },
-    { id: 'statement-bracelet', name: 'Statement Bracelet', category: 'Bracelets', price: 22.0, image: 'wrist bracelet 1.jpeg', description: 'A bold bracelet crafted with rich textures and colors, perfect for elevating everyday style.' },
-    { id: 'ethnic-cuff', name: 'Ethnic Cuff', category: 'Bracelets', price: 29.0, image: 'bangles1.jpeg', description: 'An elegant cuff with engraved cultural symbols and a sleek finish, blending tradition with modern sophistication.' },
-    { id: 'wax-print-tote', name: 'Wax Print Tote', category: 'Bags', price: 33.0, image: 'bag on stand1.jpeg', description: 'A durable tote bag featuring bold wax-print designs that are practical, stylish, and perfect for daily use.' },
-    { id: 'leather-wallet', name: 'Leather Wallet', category: 'Accessories', price: 32.0, image: 'trad bag1.jpeg', description: 'A compact leather wallet decorated with embossed patterns, combining function with a unique cultural look.' },
-    { id: 'patterned-shawl', name: 'Patterned Shawl', category: 'Accessories', price: 40.0, image: 'guy fixing.jpeg', description: 'A soft, lightweight shawl woven with intricate geometric patterns, ideal for layering and gifting.' },
-    { id: 'silver-anklet', name: 'Silver Anklet', category: 'Accessories', price: 27.0, image: 'bracelets 1.jpeg', description: 'A delicate silver anklet with subtle shine and timeless charm, designed to add a graceful finish to any outfit.' },
-    { id: 'beaded-bracelet', name: 'Beaded Bracelet', category: 'Bracelets', price: 18.0, image: 'green necklace.jpeg', description: 'A colorful beaded bracelet made with traditional weaving techniques, bringing warmth and personality to your style.' },
-    { id: 'gift-set', name: 'Gift Set', category: 'Sets', price: 60.0, image: 'handbag1.jpeg', description: 'A curated collection of accessories thoughtfully assembled as a beautiful gift option for special occasions.' }
+    { id: 'brass-necklace', name: 'Brass Necklaces', category: 'Necklaces', price: 45.0, image: 'africa necklace.jpeg', description: 'A Kelis Africa minimalist brass choker necklace represents a striking contemporary evolution of one of Africa’s oldest and most powerful jewelry forms: the neck torque.' },
+    { id: 'masai-beaded-clutch-bag', name: 'maasai-beaded clutch bags', category: 'bags', price: 28.0, image: 'more bags.jpeg', description: 'a beaded clutch purse is far more than a simple fashion accessory—it is a wearable archive of identity, storytelling, and community..' },
+    { id: 'beaded-rings', name: 'Beaded-rings', category: 'rings', price: 35.0, image: 'brown ring.jpeg', description: 'Classic brass rings with heritage-inspired shapes and polish.' },
+    { id: 'Kiondo-Bags', name: 'Kiondo-Bags', category: 'Bags', price: 24.0, image: 'bags outlined.jpeg', description: 'a masterpiece of sustainable indigenous architecture, deeply rooted in the cultural heritage of the Agĩkũyũ (Kikuyu), Akamba, and Aembu communities of Central and Eastern Kenya..' },
+    { id: 'Bolga-Basket', name: 'Bolga-baskets', category: 'Baskets', price: 22.0, image: 'hat+bag.jpeg', description: 'a beautiful testament to the resilience, resourcefulness, and deep-seated community spirit of Northern Ghana.Extensions of the savanna landscape and a profound symbol of matrilineal craftsmanship.' },
+    { id: 'beaded-bracelets', name: 'Beaded-bracelets', category: 'Bracelets', price: 29.0, image: 'bangles1.jpeg', description: 'An elegant cuff with engraved cultural symbols and a sleek finish, blending tradition with modern sophistication.' },
+    { id: 'Kikapu-Baskets', name: 'Kikapu-baskets', category: 'Baskets', price: 33.0, image: 'bag on stand1.jpeg', description: 'Originating along the Swahili Coast and woven by communities across East Africa, a kikapu is a masterclass in zero-waste design.' },
+    { id: 'Sisal-bags', name: 'Sisal-bags', category: 'Baskets', price: 32.0, image: 'trad bag1.jpeg', description: 'A masterclass in resilient, earth-born architecture.The sisal bag has evolved into a global symbol of sustainable luxury.' },
+    { id: 'Maasai-beaded-bracelets', name: 'Maasai-beaded-bracelet', category: 'Bracelets', price: 27.0, image: 'bracelets 1.jpeg', description: 'A dynamic visual statement of community standing.Ranging from slim, flexible everyday strands to the iconic rigid cuffs (Enkata)—are packed with deep-seated cultural communication.' },
+    
 ];
 
 function formatCurrency(value) {
