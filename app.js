@@ -54,7 +54,7 @@ function buildWhatsAppUrl(cart) {
         .map((item) => `${item.quantity} x ${item.name}`)
         .join('\n');
     const message = `Hello! I would like to place an order for:\n${itemsText}\n\nTotal: ${formatCurrency(orderTotal + SHIPPING)}\n\nPlease let me know the next steps.`;
-    const whatsappNumber = '+254707135305';
+    const whatsappNumber = '+254722805827';
     return `https://wa.me/${whatsappNumber.replace(/\D/g, '')}?text=${encodeURIComponent(message)}`;
 }
 
