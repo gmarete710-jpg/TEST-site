@@ -230,11 +230,23 @@ function initContactPage() {
     if (!form) return;
     form.addEventListener('submit', (event) => {
         event.preventDefault();
+
+        const name = form.querySelector('#name').value.trim();
+        const email = form.querySelector('#email').value.trim();
+        const message = form.querySelector('#message').value.trim();
+        const contactEmail = form.dataset.contactEmail;
+
+        if (!contactEmail) return;
+
+        const subject = encodeURIComponent(`Contact from ${name} — GINA African Jewelry`);
+        const body = encodeURIComponent(`Name: ${name}\nEmail: ${email}\n\nMessage:\n${message}`);
+        window.location.href = `mailto:${contactEmail}?subject=${subject}&body=${body}`;
+
         const existing = form.querySelector('.success-message');
         if (existing) existing.remove();
         const successMessage = document.createElement('p');
         successMessage.className = 'success-message';
-        successMessage.textContent = 'Thanks for reaching out! We will reply within one business day.';
+        successMessage.textContent = `Your email app should open with your message ready to send. If it did not open, email us directly at ${contactEmail}.`;
         form.appendChild(successMessage);
         form.reset();
     });
