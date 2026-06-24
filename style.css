@@ -483,6 +483,12 @@ a {
     font-size: 1.05rem;
     font-weight: 700;
 }
+.uniform-gallery-image {
+  height: 200px;       
+  width: 100%;        
+  object-fit: cover;   
+  border-radius: 8px;  
+}
 .footer-links {
     display: flex;
     gap: 2.25rem;
